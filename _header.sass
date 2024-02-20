@@ -1,0 +1,21 @@
+header
+    position: sticky
+    top: 0
+    left: 0
+    background-color: #212529
+    padding: 20px 0
+    .menu
+        .imgbox
+            width: 150px
+        nav
+            .selected
+                color: #ffc800
+            a
+                margin: 0 16px
+                transition: 1s
+                cursor: pointer
+                &:hover
+                    color: #ffc800
+    @media screen and ( max-width: 990px  )
+        nav
+            display: none
