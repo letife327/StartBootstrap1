@@ -3,10 +3,19 @@ body {
   font-weight: 500;
 }
 
+section {
+  padding: 60px 0;
+}
+
+img {
+  width: 100%;
+}
+
 header {
   position: sticky;
   top: 0;
   left: 0;
+  z-index: 1;
   background-color: #212529;
   padding: 20px 0;
 }
@@ -30,39 +39,214 @@ header .menu nav a:hover {
   }
 }
 
-#background {
+#welcome {
   background: url("assets/backgroundImg.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   height: 100vh;
   padding: 60px 0;
-  position: relative;
-  z-index: -1;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#background .box {
+#welcome .box {
   color: #ffffff;
 }
-#background .box h2 {
+#welcome .box h2 {
   font-style: italic;
-  font-size: 2.25rem;
+  font-size: 36px;
   font-weight: 200;
 }
-#background .box h1 {
+#welcome .box h1 {
   margin: 32px 0 64px;
-  font-size: 4.5rem;
+  font-size: 72px;
   font-weight: 700;
 }
-#background .box .btn {
+#welcome .box .btn {
   background-color: #ffc800;
   color: #ffffff;
   padding: 20px 40px;
-  font-size: 58px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 1s;
+}
+#welcome .box .btn:hover {
+  background-color: #d9aa00;
+}
+
+#service {
+  padding: 60px 0;
+}
+#service h1 {
+  font-size: 40px;
   font-weight: 700;
 }
-#background .box .btn:hover {
-  background-color: #a3a095;
+#service h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 16px 0 36px 0;
+  font-style: italic;
+  color: #6c757d;
+}
+#service .box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#service .box .icon {
+  width: 130px;
+  height: 130px;
+  border-radius: 50%;
+  background-color: #FFC800;
+  font-size: 64px;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#service .box .textbox {
+  text-align: center;
+  padding: 0 16px;
+}
+#service .box .textbox h2 {
+  font-size: 24px;
+  font-weight: 600;
+  margin: 16px 0;
+}
+#service .box .textbox h4 {
+  font-size: 18px;
+  color: #6c757d;
+  font-weight: 400;
+  line-height: 1.2;
+  margin-bottom: 16px;
+}
+
+#portfolio {
+  background-color: #F8F9FA;
+}
+#portfolio h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#portfolio h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 16px 0 36px 0;
+  font-style: italic;
+  color: #6c757d;
+}
+#portfolio .box .textbox {
+  text-align: center;
+  background-color: #ffffff;
+  padding: 24px 0;
+  margin-bottom: 24px;
+}
+#portfolio .box .textbox h2 {
+  font-size: 24px;
+  font-weight: 900;
+  line-height: 1.5;
+}
+#portfolio .box .textbox p {
+  color: #6c757d;
+  font-style: italic;
+  font-size: 18px;
+}
+
+#about h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#about h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 16px 0 36px 0;
+  font-style: italic;
+  color: #6c757d;
+}
+#about .box {
+  display: flex;
+  margin: 0 0 100px;
+}
+#about .box .textbox {
+  width: 40%;
+  padding: 0 40px;
+}
+#about .box .textbox h2, #about .box .textbox h4 {
+  font-size: 24px;
+  color: #212529;
+  font-weight: 700;
+  margin-bottom: 8px;
+}
+#about .box .textbox p {
+  color: #6c757d;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 1.5;
+}
+#about .box .imgbox {
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+}
+
+#team h1 {
+  font-size: 40px;
+  font-weight: 700;
+}
+#team h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 16px 0 36px 0;
+  font-style: italic;
+  color: #6c757d;
+}
+#team .box {
+  margin-bottom: 48px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#team .box .imgbox {
+  width: 224px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid rgba(0, 0, 0, 0.1);
+}
+#team .box .textbox {
+  text-align: center;
+  padding: 24px 0 0;
+}
+#team .box .textbox h2 {
+  font-size: 28px;
+  font-weight: 900;
+  line-height: 1.2;
+}
+#team .box .textbox p {
+  font-size: 18px;
+  margin: 0 0 16px;
+  color: #6c757d;
+  font-weight: 200;
+}
+#team .box .textbox ul {
+  display: flex;
+  justify-content: space-between;
+}
+#team .box .textbox ul li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #212529;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#team h5 {
+  max-width: 600px;
+  margin: 0 auto;
+  color: #6C757D;
+  line-height: 1.75;
+  font-weight: 400;
 }/*# sourceMappingURL=style.css.map */
