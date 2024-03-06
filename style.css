@@ -191,6 +191,9 @@ header .menu nav a:hover {
   border: 8px solid rgba(0, 0, 0, 0.1);
 }
 
+#team {
+  background-color: #F8F9FA;
+}
 #team h1 {
   font-size: 40px;
   font-weight: 700;
@@ -249,4 +252,106 @@ header .menu nav a:hover {
   color: #6C757D;
   line-height: 1.75;
   font-weight: 400;
+}
+
+#social-media .imgbox {
+  width: 150px;
+  margin: 20px 0;
+}
+
+#contactus {
+  background: url("assets/mapImage.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  background-color: #212529;
+}
+#contactus h1 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #ffffff;
+}
+#contactus h3 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 16px 0 64px 0;
+  font-style: italic;
+  color: #6c757d;
+}
+#contactus form {
+  width: 100%;
+  height: 100%;
+}
+#contactus form input {
+  padding: 20px;
+  margin: 16px 0;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+}
+#contactus form input::-moz-placeholder {
+  color: #ced4da;
+  font-size: 20px;
+  font-weight: 700;
+}
+#contactus form input::placeholder {
+  color: #ced4da;
+  font-size: 20px;
+  font-weight: 700;
+}
+#contactus form textarea {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ced4da;
+  border-radius: 6px;
+  padding: 20px;
+}
+#contactus form textarea::-moz-placeholder {
+  color: #ced4da;
+  font-size: 20px;
+  font-weight: 700;
+}
+#contactus form textarea::placeholder {
+  color: #ced4da;
+  font-size: 20px;
+  font-weight: 700;
+}
+#contactus .btn {
+  background-color: #ffc800;
+  color: #ffffff;
+  padding: 20px 40px;
+  font-size: 18px;
+  font-weight: 700;
+  transition: 1s;
+  margin: 40px 0;
+  opacity: 0.65;
+}
+#contactus .btn:hover {
+  background-color: #d9aa00;
+}
+
+footer {
+  padding: 20px 0;
+}
+footer h3 {
+  font-size: 14px;
+}
+footer ul {
+  display: flex;
+  margin: 20px;
+}
+footer ul li {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #212529;
+  color: #ffffff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 15px;
+}
+footer .box a {
+  color: #212529;
+  margin: 0 16px;
+  cursor: pointer;
 }/*# sourceMappingURL=style.css.map */
