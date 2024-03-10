@@ -33,9 +33,25 @@ header .menu nav a {
 header .menu nav a:hover {
   color: #ffc800;
 }
+@media screen and (min-width: 990px) {
+  header .box {
+    display: none;
+  }
+}
 @media screen and (max-width: 990px) {
   header nav {
     display: none;
+  }
+  header .box {
+    display: flex;
+    color: #9B9D9E;
+    padding: 12px;
+    font-weight: 700;
+    border: 0.5px solid #9B9D9E;
+    border-radius: 8px;
+  }
+  header .box h4 {
+    margin: 0 8px 0 0;
   }
 }
 
