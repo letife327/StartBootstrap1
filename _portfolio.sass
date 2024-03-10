@@ -13,9 +13,6 @@
         .bigbox
             position: relative
             .icon
-                background-color:#ffc800
-                opacity: 0.8
-                visibility: hidden
                 font-size: 54px
                 color: #ffffff
                 width: 100%
@@ -26,12 +23,12 @@
                 position: absolute
                 top: 0
                 left: 0
-                transition: 0.1s ease-in-out
-            &:hover
-                .icon
-                    visibility: visible
+                &:hover
+                    transition: 0.1s ease-in-out
+                    background-color: #ffc800
+                    opacity: 0.8
                     cursor: pointer
-                
+
         .textbox
             text-align: center
             background-color: #ffffff
