@@ -7,7 +7,10 @@ section {
   padding: 60px 0;
 }
 
-img {
+.imgbox {
+  overflow: hidden;
+}
+.imgbox img {
   width: 100%;
 }
 
@@ -204,14 +207,17 @@ header .menu nav a:hover {
   font-style: italic;
   color: #6c757d;
 }
+#about .right {
+  justify-content: flex-end;
+}
 #about .box {
   display: flex;
+  align-items: center;
   margin: 0 0 100px;
-  padding: 0 40px;
 }
 #about .box .textbox {
   padding: 0 40px;
-  width: 500px;
+  width: 400px;
 }
 #about .box .textbox h2, #about .box .textbox h4 {
   font-size: 24px;
@@ -226,6 +232,8 @@ header .menu nav a:hover {
   line-height: 1.5;
 }
 #about .box .imgbox {
+  width: 160px;
+  height: 160px;
   border-radius: 50%;
   overflow: hidden;
   border: 8px solid rgba(0, 0, 0, 0.1);
@@ -251,7 +259,7 @@ header .menu nav a:hover {
 
 @media screen and (max-width: 1000px) {
   .imgbox {
-    width: 150px;
+    width: 100px;
   }
 }
 #team {
