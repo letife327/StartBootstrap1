@@ -155,13 +155,14 @@ header .menu nav a:hover {
   font-style: italic;
   color: #6c757d;
 }
-#portfolio .box .bigbox {
-  position: relative;
+#portfolio .box {
+  background-color: #ffffff;
 }
-#portfolio .box .bigbox .imgbox {
+#portfolio .box .imgbox {
+  position: relative;
   width: 100%;
 }
-#portfolio .box .bigbox .icon {
+#portfolio .box .imgbox .icon {
   font-size: 54px;
   color: #ffffff;
   width: 100%;
@@ -173,7 +174,7 @@ header .menu nav a:hover {
   top: 0;
   left: 0;
 }
-#portfolio .box .bigbox .icon:hover {
+#portfolio .box .imgbox .icon:hover {
   transition: 0.1s ease-in-out;
   background-color: #ffc800;
   opacity: 0.8;
@@ -181,7 +182,6 @@ header .menu nav a:hover {
 }
 #portfolio .box .textbox {
   text-align: center;
-  background-color: #ffffff;
   padding: 24px 0;
   margin-bottom: 24px;
 }
