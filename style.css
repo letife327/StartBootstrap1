@@ -173,6 +173,7 @@ header .menu nav a:hover {
   position: absolute;
   top: 0;
   left: 0;
+  opacity: 0;
 }
 #portfolio .box .imgbox .icon:hover {
   transition: 0.1s ease-in-out;
