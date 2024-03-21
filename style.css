@@ -176,7 +176,7 @@ header .menu nav a:hover {
   opacity: 0;
 }
 #portfolio .box .imgbox .icon:hover {
-  transition: 0.1s ease-in-out;
+  transition: 1s ease-in-out;
   background-color: #ffc800;
   opacity: 0.8;
   cursor: pointer;
@@ -320,17 +320,18 @@ header .menu nav a:hover {
 }
 #team .box .textbox p {
   font-size: 18px;
-  margin: 0 0 16px;
+  margin: 8px 0 16px;
   color: #6c757d;
   font-weight: 200;
 }
 #team .box .textbox ul {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
 }
 #team .box .textbox ul li {
   width: 40px;
   height: 40px;
+  margin: 0 8px;
   border-radius: 50%;
   background-color: #212529;
   color: #ffffff;
@@ -344,6 +345,30 @@ header .menu nav a:hover {
   color: #6C757D;
   line-height: 1.75;
   font-weight: 400;
+}
+@media screen and (max-width: 992px) {
+  #team h1 {
+    font-size: 36px;
+  }
+  #team h3 {
+    font-size: 16px;
+    margin: 12px 0 24px;
+  }
+  #team .box {
+    margin-bottom: 36px;
+  }
+  #team .box .imgbox {
+    width: 180px;
+  }
+  #team .box .textbox {
+    padding: 18px 0 0;
+  }
+  #team .box .textbox h2 {
+    font-size: 22px;
+  }
+  #team .box .textbox ul li {
+    margin: 0 5px;
+  }
 }
 
 #social-media .imgbox {
@@ -425,11 +450,10 @@ footer {
   padding: 20px 0;
 }
 footer h3 {
-  font-size: 14px;
+  font-size: 16px;
 }
 footer ul {
   display: flex;
-  margin: 20px;
 }
 footer ul li {
   width: 40px;
@@ -446,4 +470,12 @@ footer .box a {
   color: #212529;
   margin: 0 16px;
   cursor: pointer;
+}
+@media screen and (max-width: 992px) {
+  footer ul {
+    margin: 20px 0;
+  }
+  footer ul li {
+    margin: 0 10px;
+  }
 }/*# sourceMappingURL=style.css.map */
